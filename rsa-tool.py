@@ -29,6 +29,7 @@ def main(args, loglevel):
         private_file = open('private_key.pem', 'wb')
         private_file.write(key.export_key())
         private_file.close()
+        print('Key pair generated successfully.')
 
     # decrypt message_file with private_file
     elif args.decrypt:
@@ -37,6 +38,7 @@ def main(args, loglevel):
         private_key = RSA.import_key(open(args.decrypt[1], 'rb').read())
         decryptor = PKCS1_OAEP.new(private_key)
         decrypted = decryptor.decrypt(message_file.read())
+        print('Message decrypted as follow:')
         print(decrypted.decode('utf-8'))
 
     # encrypt message_file with public_file
@@ -51,10 +53,7 @@ def main(args, loglevel):
         encrypted_file = open('encrypted', 'wb')
         encrypted_file.write(encrypted)
         encrypted_file.close()
-
-    logging.info("You passed an argument.")
-    logging.debug("Your Argument: %s" % args)
-
+        print('Message encrypted successfully.')
 
 # Program begin point
 if __name__ == '__main__':
