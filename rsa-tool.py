@@ -58,7 +58,7 @@ def main(args, loglevel):
 # Program begin point
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(
-        description="Simple tool provides rsa key generation, message encryption and decription.")
+        description="Simple tool provides rsa key generation, message encryption and decryption.")
     # Parameters
     parser.add_argument(
         "-v",

@@ -1,5 +1,5 @@
 # rsa-tool
-Simple tool provides rsa key generation, message encryption and decription. Useful when sending  secret messages to others. This program is more like a practice for command line tool, you can treat it as an template as well.
+Simple tool provides rsa key generation, message encryption and decryption. Useful when sending  secret messages to others. This program is more like a practice for command line tool, you can treat it as an template as well.
 
 ## usage:  
 rsa-tool.py [-h] [-v]  
