@@ -16,10 +16,10 @@ rsa-tool.py [-h] [-v]
                         encrypt a message file using a specific public key file
 ## Example:
 Generate a key pair:  
-`./rsa-tool -g`
+`./rsa-tool.py -g`
 
 Encrypt a message:  
-`./rsa-tool -e message.txt public_key.pem`
+`./rsa-tool.py -e message.txt public_key.pem`
 
 Decrypt a message:  
-`./rsa-tool -d encrypted private_key.pem`
+`./rsa-tool.py -d encrypted private_key.pem`
