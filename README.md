@@ -1,7 +1,11 @@
 # rsa-tool
 Simple tool provides rsa key generation, message encryption and decryption. Useful when sending  secret messages to others. This program is more like a practice for command line tool, you can treat it as an template as well.
 
-## usage:  
+## Installation
+`pip install -r requirement.txt`
+
+
+## Usage:  
 rsa-tool.py [-h] [-v]  
                    [-g | -d message_file private_key | -e message_file public_key]  
 
