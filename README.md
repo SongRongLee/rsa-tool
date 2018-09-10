@@ -2,7 +2,7 @@
 Simple tool provides rsa key generation, message encryption and decryption. Useful when sending  secret messages to others. This program is more like a practice for command line tool, you can treat it as an template as well.
 
 ## Installation
-`pip install -r requirement.txt`
+`pip install -r requirements.txt`
 
 
 ## Usage:  
